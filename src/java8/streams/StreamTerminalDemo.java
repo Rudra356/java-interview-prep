@@ -10,6 +10,8 @@ public class StreamTerminalDemo {
 
         List<Employee> employees = EmployeeData.getEmployees();
 
+        employees.stream().sorted().forEach(System.out::println);
+
         System.out.println(employees.size());
 
         long count = employees.stream().count();

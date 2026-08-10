@@ -1,6 +1,12 @@
 package java8.streams;
 
-public class Employee {
+public class Employee implements Comparable<Employee> {
+
+    @Override
+    public int compareTo(Employee employee) {
+        return Integer.compare(employee.getId(), this.getId());
+    }
+
     @Override
     public String toString() {
         return "Employee{" + "id=" + id + ", name='" + name + '\'' + ", salary=" + salary + ", dept=" + dept + '}';
