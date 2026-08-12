@@ -55,7 +55,6 @@ public class ArrayPractice3 {
                 arr[end] = arr[start];
                 arr[start] = temp;
 
-
                 start++;
                 end--;
             }
