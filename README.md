@@ -81,7 +81,7 @@ java-interview-prep
 
 - [ ] Core Java
 - [ ] Collections
-- [ ] Java 8
+- [x] Java 8
 - [ ] JDBC
 - [ ] Coding Exercises
 - [ ] Interview Notes
