@@ -45,7 +45,6 @@ public class ArrayListPractice2 {
         System.out.println(list);
     }
 
-
     //New Arraylist with evens
     static void NewArrayList(ArrayList<Integer> list) {
         ArrayList<Integer> newList = new ArrayList<>();
