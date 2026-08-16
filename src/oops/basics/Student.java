@@ -1,8 +1,17 @@
 package oops.basics;
 
+import java.util.Comparator;
 import java.util.List;
 
-public class Student {
+public class Student implements Comparable<Student> {
+    /**
+     * @param student
+     * @return
+     */
+    @Override
+    public int compareTo(Student student) {
+        return this.getName().compareTo(student.getName());
+    }
 
     public Student(int id, String name, int age) {
         this.id = id;

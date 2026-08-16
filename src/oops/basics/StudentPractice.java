@@ -5,7 +5,7 @@ import java.util.Optional;
 
 public class StudentPractice {
     public static void main(String[] args) {
-        List<Student> students = Student.getStudents();
+        List<Student> students = new java.util.ArrayList<>(Student.getStudents());
         students.stream().map(Student::getName).forEach(System.out::println);
         students.stream().map(Student::getId).forEach(System.out::println);
         students.stream().map(s -> s.getName() + " - " + s.getAge())
@@ -22,11 +22,12 @@ public class StudentPractice {
         boolean anyMatch = students.stream().anyMatch(s -> s.getName().equals("Priya"));
         students.stream().filter(Student::isAdult).forEach(System.out::println);
 
-        Student s1 = new Student(210,"Raj",60);
+        Student s1 = new Student(210, "Raj", 60);
         s1.setAge(30);
         s1.setName("Rudra");
         System.out.println(s1);
         s1.birthday();
         s1.isEligibleForAdmission();
+
     }
 }
